@@ -1,0 +1,2 @@
+export const CONFIG={appName:'CareBox',deviceId:'CAREBOX-001',adapter:localStorage.getItem('carebox.adapter')||'simulation',staleAfterMs:90000,apiBaseUrl:localStorage.getItem('carebox.apiUrl')||'http://carebox.local',locale:'fr-FR'};
+export const NAV=[['dashboard','⌂','Vue d’ensemble'],['monitoring','◉','Suivi en direct'],['sensors','⌁','Capteurs'],['alerts','♧','Alertes'],['history','◷','Historique'],['family','♧','Famille'],['device','▣','Appareil'],['network','⌁','Réseau'],['profile','◉','Profil'],['settings','⚙','Paramètres']];

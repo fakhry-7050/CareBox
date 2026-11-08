@@ -1,0 +1,2 @@
+/** Firebase integration seam. Configure the official SDK and trusted backend before enabling. */
+export class FirebaseAdapter{constructor(){this.configured=false}isAvailable(){return this.configured}async signIn(){throw new Error('Firebase n’est pas configuré.')}async subscribeToDevice(){throw new Error('Firestore n’est pas configuré.')}async requestMessagingPermission(){throw new Error('FCM n’est pas configuré.')}}

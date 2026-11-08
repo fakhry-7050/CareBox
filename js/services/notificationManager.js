@@ -1,0 +1,2 @@
+import {store} from '../data/storage.js';import {bus} from '../core/eventBus.js';
+export const notifications={async permission(){if(!('Notification'in window))return 'unsupported';return Notification.requestPermission()},push(title,body){const d=store.update(x=>{x.notifications.unshift({id:crypto.randomUUID(),title,body,timestamp:new Date().toISOString(),read:false})});bus.emit('data:changed',d);if('Notification'in window&&Notification.permission==='granted'&&document.visibilityState==='hidden')new Notification(title,{body,icon:'assets/icons/icon.svg'})}};
