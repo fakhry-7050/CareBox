@@ -1,7 +1,7 @@
 // Firebase web configuration for CareBox.
 // These values identify the Firebase project; never place Admin SDK credentials here.
 export const firebaseConfig = {
-  apiKey: "AIzaSyBd1sJxybjpE3ic7q0sLHG4GPawnzmK5k4",
+  apiKey: "AIzaSyBd1sJxybjpE3ic7q0slHG4gPawnzmK5k4",
   authDomain: "carebox-production.firebaseapp.com",
   projectId: "carebox-production",
   storageBucket: "carebox-production.firebasestorage.app",
