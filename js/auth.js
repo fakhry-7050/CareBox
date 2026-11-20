@@ -1,3 +1,4 @@
+import './i18n.js';
 import { FirebaseAdapter } from './adapters/firebaseAdapter.js';
 
 const firebase = new FirebaseAdapter();
